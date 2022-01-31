@@ -47,6 +47,6 @@ app.get('/getTask', async (req, res) => {
     })
 });
 
-app.listen(8000, () => {
-    console.log('Server Running on Port 8000');
+app.listen(process.env.PORT, () => {
+    console.log(`Server Running on Port ${process.env.PORT}`);
 })
